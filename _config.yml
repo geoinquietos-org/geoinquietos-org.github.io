@@ -15,7 +15,7 @@ permalink:     "noticias/:categories/:year/:month/:day/:title.html"
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 # Collections
 collections:
