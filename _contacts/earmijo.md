@@ -1,12 +1,12 @@
 ---
-id: mafrias
-name: Marco Antonio Frías
+id: earmijo
+name: Eric Armijo
+e-mail: rcrmj@hotmail.com
 
 websites:
-  main: https://smaug1.wordpress.com/
-  twitter: 51114u9
-  github: 51114u9
+  twitter: rcrmj
+  github: YoViajo
 
 groups:
-  - santacruzsierra
+  - santacruz
 ---
