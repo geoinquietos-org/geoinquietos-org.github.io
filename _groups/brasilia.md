@@ -1,5 +1,5 @@
 ---
-id           : brasilia
+group_id     : brasilia
 title        :  "Geoinquietos Brasilia"
 mailing-list : http://www.osgeo.org
 longitude    : -47.882624
