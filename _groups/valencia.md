@@ -11,6 +11,7 @@ websites:
   github     : geoinquietosvlc
   meetup     : Geoinquietos-Valencia
   facebook   : https://www.facebook.com/geoinquietosVLC
+  telegram   : https://telegram.me/joinchat/AGVnUj4ucJDsb2WWpB-NFw
 
 e-mail       : geoinquietosvlc@gmail.com
 ---
