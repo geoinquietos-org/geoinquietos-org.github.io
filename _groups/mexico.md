@@ -1,5 +1,5 @@
 ---
-id            : mexico
+group_id      : mexico
 title         :  "Geoinquietos México"
 mailing-list  : http://lists.osgeo.org/mailman/listinfo/mexico
 longitude     : -99.133

@@ -1,5 +1,5 @@
 ---
-id            : madrid
+group_id      : madrid
 title         : "Geoinquietos Madrid"
 mailing-list  : http://lists.osgeo.org/mailman/listinfo/madrid
 longitude     : -3.7

@@ -1,5 +1,5 @@
 ---
-id: pferrer
+contact_id: pferrer
 name: Pedro-Juan Ferrer
 
 websites:

@@ -1,5 +1,5 @@
 ---
-id: shiguera
+contact_id: shiguera
 name: Santiago Higuera
 
 websites:

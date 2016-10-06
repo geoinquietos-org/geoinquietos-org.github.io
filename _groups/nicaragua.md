@@ -1,5 +1,5 @@
 ---
-id            : nicaragua
+group_id      : nicaragua
 title         :  "Geoinquietos Nicaragua"
 mailing-list  : http://lists.osgeo.org/mailman/listinfo/nicaragua
 longitude     : -86.250

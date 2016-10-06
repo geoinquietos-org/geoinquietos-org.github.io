@@ -1,5 +1,5 @@
 ---
-id: roliete
+contact_id: roliete
 name: Rafael Oliete
 
 websites:

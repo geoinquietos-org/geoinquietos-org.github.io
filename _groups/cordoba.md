@@ -1,5 +1,5 @@
 ---
-id            : cordoba
+group_id      : cordoba
 title         :  "Geoinquietos Córdoba"
 mailing-list  : http://lists.osgeo.org/mailman/listinfo/cordoba
 longitude     : -4.778

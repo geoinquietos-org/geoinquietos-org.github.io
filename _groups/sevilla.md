@@ -1,5 +1,5 @@
 ---
-id            : sevilla
+group_id      : sevilla
 title         :  "Geoinquietos Sevilla"
 mailing-list  : http://lists.osgeo.org/mailman/listinfo/sevilla
 longitude     : -5.987

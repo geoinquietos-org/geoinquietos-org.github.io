@@ -1,5 +1,5 @@
 ---
-id            : cantabria
+group_id      : cantabria
 title         :  "Geoinquietos Cantabria"
 mailing-list  : http://lists.osgeo.org/mailman/listinfo/cantabria
 longitude     : -3.804

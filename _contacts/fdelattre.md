@@ -1,5 +1,5 @@
 ---
-id: fdelattre
+contact_id: fdelattre
 name: Felix Delattre
 
 websites:

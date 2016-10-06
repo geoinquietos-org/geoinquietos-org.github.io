@@ -1,5 +1,5 @@
 ---
-id: earmijo
+contact_id: earmijo
 name: Eric Armijo
 e-mail: rcrmj@hotmail.com
 

@@ -33,8 +33,8 @@ layout: default
         <li>Contactos:<ul>
           {% for contact in site.contacts %}
             {% for cgroup in contact.groups %}
-              {% if page.id == cgroup%}
-              <li><a href="{{site.baseurl}}/contactos/{{contact.id}}">{{contact.name}}</a>
+              {% if page.group_id == cgroup%}
+              <li><a href="{{site.baseurl}}/contactos/{{contact.contact_id}}">{{contact.name}}</a>
               </li>
               {% endif %}
             {% endfor %}
@@ -50,7 +50,7 @@ layout: default
     <ul>
     {% for post in site.posts %}
       {% for category in post.categories %}
-        {% if page.id == category %}
+        {% if page.group_id == category %}
           <li class="post-list">
             <a href="{{ post.url | prepend: site.baseurl }}" class="">
               {{ post.date | date: "%d-%m-%Y" }} - {{ post.title }}

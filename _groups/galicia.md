@@ -1,5 +1,5 @@
 ---
-id           : galicia
+group_id     : galicia
 title        :  "Xeoinquedos"
 mailing-list : http://lists.osgeo.org/mailman/listinfo/es_norte
 longitude    : -8.549

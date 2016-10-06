@@ -1,5 +1,5 @@
 ---
-id           : argentina
+group_id     : argentina
 title        :  "Geoinquietos Argentina"
 mailing-list : http://lists.osgeo.org/mailman/listinfo/argentina
 longitude    : -58.381

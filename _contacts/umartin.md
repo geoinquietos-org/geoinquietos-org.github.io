@@ -1,5 +1,5 @@
 ---
-id: umartin
+contact_id: umartin
 name: Ulises Martín
 
 websites:

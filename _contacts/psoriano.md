@@ -1,5 +1,5 @@
 ---
-id: psoriano
+contact_id: psoriano
 name: Patricio Soriano
 
 websites:

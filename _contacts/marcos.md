@@ -1,5 +1,5 @@
 ---
-id: marcos
+contact_id: marcos
 name: Moisés Arcos
 email: moiarcsan@gmail.com
 

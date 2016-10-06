@@ -1,5 +1,5 @@
 ---
-id: marias
+contact_id: marias
 name: María Arias de Reyna
 
 websites:

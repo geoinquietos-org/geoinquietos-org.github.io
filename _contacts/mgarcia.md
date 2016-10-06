@@ -1,5 +1,5 @@
 ---
-id: mgarcia
+contact_id: mgarcia
 name: Micho García
 
 websites:

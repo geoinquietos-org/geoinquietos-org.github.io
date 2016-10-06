@@ -1,5 +1,5 @@
 ---
-id: jsanz
+contact_id: jsanz
 name: Jorge Sanz
 e-mail: xurxosanz@gmail.com
 

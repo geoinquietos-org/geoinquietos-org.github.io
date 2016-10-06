@@ -1,5 +1,5 @@
 ---
-id           : barcelona
+group_id     : barcelona
 title        :  "Geoinquiets"
 mailing-list : http://lists.osgeo.org/mailman/listinfo/barcelona
 longitude    : 2.187

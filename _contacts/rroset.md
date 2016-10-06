@@ -1,5 +1,5 @@
 ---
-id: rroset
+contact_id: rroset
 name: Raf Roset
 
 websites:

@@ -1,5 +1,5 @@
 ---
-id: iolea
+contact_id: iolea
 name: Ismael Olea
 
 websites:

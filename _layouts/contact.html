@@ -17,8 +17,8 @@ layout: default
         <li>Grupos:<ul>
           {% for group in page.groups %}
             {% for sgroup in site.groups %}
-              {% if group == sgroup.id %}
-              <li><a href="{{site.baseurl}}/grupos/{{sgroup.id}}">{{sgroup.title}}</a>
+              {% if group == sgroup.group_id %}
+              <li><a href="{{site.baseurl}}/grupos/{{sgroup.group_id}}">{{sgroup.title}}</a>
               </li>
               {% endif %}
             {% endfor %}

@@ -1,5 +1,5 @@
 ---
-id           : almeria
+group_id     : almeria
 title        :  "Geoinquietos Almería"
 mailing-list : https://foro.hacklabalmeria.net/c/geoinquietosalm
 longitude    : -2.333

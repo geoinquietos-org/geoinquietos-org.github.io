@@ -1,5 +1,5 @@
 ---
-id           : valencia
+group_id     : valencia
 title        :  "Geoinquietos Valencia"
 mailing-list : http://lists.osgeo.org/mailman/listinfo/valencia
 longitude    : -0.4

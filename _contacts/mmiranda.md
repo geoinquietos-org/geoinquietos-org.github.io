@@ -1,5 +1,5 @@
 ---
-id: mmiranda
+contact_id: mmiranda
 name: Mauricio Miranda
 
 websites:
