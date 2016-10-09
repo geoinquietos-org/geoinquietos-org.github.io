@@ -9,4 +9,5 @@ websites:
   main        : http://cordoba.geoinquietos.org
   twitter     : GeoinquietosODB
   github      : geoinquietoscordoba
+  telegram    : https://telegram.me/joinchat/BsnpY0BE07I4MD-i9RhRCw
 ---

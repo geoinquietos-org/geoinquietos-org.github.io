@@ -10,4 +10,5 @@ websites:
   twitter     : geoinquietosmad
   github      : geoinquietosmadrid
   meetup      : Geoinquietos-Mad
+  telegram    : https://telegram.me/geoinquietosmad
 ---
