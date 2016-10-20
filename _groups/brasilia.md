@@ -6,7 +6,8 @@ longitude    : -47.882624
 latitude     : -15.792584
 
 websites:
-  main       : https://www.instagram.com/geoinquietosbsb/
+  main       : https://wiki.osgeo.org/wiki/Geoinquietos_Bras%C3%ADlia
+  instagram  : https://www.instagram.com/geoinquietosbsb/
   calendar   : https://calendar.google.com/calendar/embed?src=uf1e2q0ssfk9t2d0ud13bki15c%40group.calendar.google.com&ctz=America/Sao_Paulo
 
 e-mail       : geoinquietos-bsb-owner@lists.osgeo.org
