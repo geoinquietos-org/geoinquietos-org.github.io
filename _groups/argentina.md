@@ -10,4 +10,5 @@ websites:
   main     : http://argentina.geoinquietos.org
   twitter  : geoinquietosarg
   facebook : https://www.facebook.com/GeoinquietosArgentina/ 
+  telegram : https://telegram.me/geoinquietosar
 ---
