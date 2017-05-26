@@ -1,13 +1,14 @@
 ---
 group_id     : "zaragoza"
 title        : "Geoinquietos Zaragoza"
-mailing-list : "https://www.meetup.com/mapcolabora/"
+mailing-list : "https://groups.google.com/forum/#%21forum/mapeado-colaborativohttp://mapcolabora.org/"
 longitude    : "-0.887553"
 latitude     : "41.646481"
-avatar       : "https://secure.meetupstatic.com/photos/event/9/1/3/8/global_456457176.jpeg"
+email        : "mapeadocolaborativo@gmail.com"
 
 websites:
-  main     : "http://blogzac.es/category/think-zac-las-armas/mapeado-colaborativo/"
+  main     : "https://groups.google.com/forum/#%21forum/mapeado-colaborativo"
   twitter  : "MapColabora"
-  meetup   : "https://www.meetup.com/mapcolabora/"
+  meetup   : "mapcolabora"
+  github   : "mapcolabora"
 ---
