@@ -7,8 +7,8 @@ latitude     : 37.814
 # avatar       :
 
 websites:
-#  main     :
+  main     : https://mugeoinquietos.gq/
 #  twitter  :
 #  github   :
-telegram   : https://telegram.me/mugeoinquietos
+  telegram   : https://telegram.me/mugeoinquietos
 ---
