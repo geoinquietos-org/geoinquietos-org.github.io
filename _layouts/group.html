@@ -27,7 +27,7 @@ layout: default
       <img id="avatar" src="" />
 
       <ul>
-        <li><a href="{{page.mailing-list}}">Lista de correo</a></li>
+        {% if page.mailing-list %}<li><a href="{{page.mailing-list}}">Lista de correo</a></li>{% endif %}
 {% include details.html %}
 
         <li>Contactos:<ul>

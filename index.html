@@ -1,16 +1,28 @@
 ---
 layout: default
+title: Geoinquietos
 ---
 
 <style>
-  #map{
-    float: right;
-    width:58%;
-    height:330px;
-  }
   #group-links{
     float: left;
+    width: 100%;
   }
+  #group-links ul{
+    margin: 0 5px 25px 0;
+  }
+  #group-links ul li{
+    display: inline;
+    list-style-type: circle;
+  }
+  #map{
+    height:350px;
+    width: 100%;
+  }
+  #map_wrapper{
+    float:left;
+  }
+
 </style>
 
 <div class="home">
@@ -40,8 +52,8 @@ layout: default
     {% for group in site.groups %}
       <li>
           <a href="{{ site.baseurl }}/grupos/{{ group.group_id }}">
-            {{ group.title }}
-          </a>
+            {{ group.title | replace: "Geoinquietos ", "" }}
+          </a> {% unless forloop.last %}·{% endunless %}
       </li>
     {% endfor %}
   </ul>
