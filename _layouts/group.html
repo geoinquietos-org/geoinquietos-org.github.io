@@ -89,21 +89,9 @@ layout: default
       type: 'cartodb',
       sublayers: [{
         sql: "{{site.cartodb.sql}}",
-        cartocss: $('#cartoCSS').html(),
-        interactivity: 'cartodb_id'
+        cartocss: $('#cartoCSS').html()
       }]
     })
-    .addTo(map)
-    .done(function(layer){
-      // show infowindows on click
-      cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0), ['cartodb_id','_group','id','main_website'],{}).model.set({
-        //'sanitizeTemplate':false,
-        'template' :  function(object){
-            if (object && object.cartodb_id){
-                return Mustache.render($('#infowindow_template').html(),object)
-            }
-        }
-      });
-    });
-  })
+    .addTo(map);
+  });
 </script>
