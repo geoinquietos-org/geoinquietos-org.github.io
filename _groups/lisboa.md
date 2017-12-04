@@ -7,7 +7,7 @@ latitude     : 38.736946
 # avatar       :
 
 websites:
-  main     : https://wiki.osgeo.org/wiki/Portugal/Geoinquietos-lisboa/
+  main     : https://wiki.osgeo.org/wiki/Portugal/Geoinquietos-lisboa
 #  twitter  :
 #  github   :
 #  telegram   : 
