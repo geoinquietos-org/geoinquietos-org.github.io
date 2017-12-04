@@ -4,7 +4,6 @@ name: Carlos Sousa Ferreira
 email: carlosmsf@gmail.com
 
 websites:
-  twitter    : conejococina
   linkedin   : https://www.linkedin.com/in/carlos-sousa-ferreira-27584612/
 
 groups:
