@@ -1,6 +1,7 @@
 ---
 group_id     : murcia
 title        :  "Geoinquietos Murcia"
+mailing-list : http://lists.osgeo.org/mailman/listinfo/murcia
 longitude    : -1.101
 latitude     : 37.814
 
