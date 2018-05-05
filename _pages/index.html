@@ -90,9 +90,8 @@ permalink: /
     })
     .addTo(map)
     .done(function(layer){
-      map.attributionControl.setPrefix('');
       map.attributionControl._attributions = {};
-      map.attributionControl.addAttribution('<a href="http://www.openstreetmap.org/copyright">OSM</a>, <a href="http://geoinquietos.org">Geoinquietos</a>');
+      map.attributionControl.addAttribution('<a href="http://www.openstreetmap.org/copyright">OSM</a> | <a href="http://geoinquietos.org">Geoinquietos</a>');
 
       // show infowindows on click
       cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0),
