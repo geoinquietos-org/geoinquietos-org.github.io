@@ -1,0 +1,11 @@
+---
+layout: null
+permalink: sitemap.txt
+---
+{{site.production_url}}
+{% for group in site.groups %}
+{{ site.production_url }}/grupos/{{ group.group_id }}{% endfor %}
+{% for contact in site.contacts %}
+{{site.production_url }}/contactos/{{contact.contact_id}}{% endfor %}
+{% for post in site.posts %}
+{{ site.production_url }}{{ post.url }}{% endfor %}
