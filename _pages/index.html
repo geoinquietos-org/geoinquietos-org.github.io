@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Geoinquietos
+permalink: /
 ---
 
 <style>
@@ -75,9 +76,9 @@ title: Geoinquietos
       zoom: {{site.cartodb.zoom}}
     });
 
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png',{
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OSM</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
-    }).addTo(map);
+
+
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(map);
 
     cartodb.createLayer(map, {
       user_name: 'jsanz',
@@ -89,6 +90,10 @@ title: Geoinquietos
     })
     .addTo(map)
     .done(function(layer){
+      map.attributionControl.setPrefix('');
+      map.attributionControl._attributions = {};
+      map.attributionControl.addAttribution('<a href="http://www.openstreetmap.org/copyright">OSM</a>, <a href="http://geoinquietos.org">Geoinquietos</a>');
+
       // show infowindows on click
       cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0),
         ['cartodb_id','_group','id','main_website'],{})

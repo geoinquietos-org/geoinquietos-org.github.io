@@ -1,0 +1,29 @@
+---
+layout: null
+permalink: /humans.txt
+---
+
+/* TEAM */
+
+	Chef:Jorge Sanz
+	Contact: xurxosanz [at] gmail.com
+	Twitter: @xurxosanz
+	From: Aldaia, Valencia, Spain
+
+
+/* THANKS */
+
+	All free software, culture and data enthusiasts
+	because you make the world a better place.
+
+
+/* SITE */
+
+	Language: Spanish
+	Standards: HTML5, CSS3
+	Components: Twitter Bootstrap
+	Services: CARTO
+	IDE: VS Code
+	Site Generator: Jekyll
+	Hosting: Github Pages
+	SCM: Github

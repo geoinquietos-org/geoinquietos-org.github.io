@@ -1,5 +1,5 @@
 ---
-contact_id   : "gioman"
+contact_id   : "gmanghi"
 name         : "Giovanni Manghi"
 email        : "giovanni.manghi@naturalgis.pt"
 
