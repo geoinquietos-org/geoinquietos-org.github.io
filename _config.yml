@@ -50,7 +50,7 @@ cartodb:
     lon: -44
   zoom: 2
   group_zoom: 7
-  sql: "SELECT regexp_replace(_group,'.*Geoinquietos ','') as label FROM jsanz.groups"
+  sql: "SELECT *, regexp_replace(_group,'.*Geoinquietos ','') as label FROM jsanz.groups"
 
 
 exclude:
