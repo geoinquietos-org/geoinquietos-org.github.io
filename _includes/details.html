@@ -1,8 +1,5 @@
 <li>Enlaces:
-    {% if page.websites.main %}
-    <a href="{{page.websites.main}}">web</a>
-    {% endif %}
-
+    {% if page.websites.main %} <a href="{{page.websites.main}}">web</a>,{% endif %}
     {% for site in page.websites %}
       {% unless site[0] == "main" %}
         {% if site[0] == "twitter" %}
@@ -14,10 +11,8 @@
         {% else %}
           {% assign url = site[1] %}
         {% endif %}
-        <a href="{{ url }}">{{site[0]}}</a>
+        <a href="{{ url }}">{{site[0]}}</a>{% unless forloop.last %},{% endunless %}
       {% endunless %}
-
-      {% unless forloop.last %},{% endunless %}
     {% endfor %}
 </li>
 
