@@ -8,4 +8,5 @@ avatar       : https://pbs.twimg.com/profile_images/1157838560415932418/bjOO9p8L
 
 websites:
   twitter  : GeoinquietosFOR
+  telegram : https://t.me/geoinquietosfor
 ---
