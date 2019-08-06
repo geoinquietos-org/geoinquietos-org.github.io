@@ -83,7 +83,7 @@ layout: default
     L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(map);
 
     cartodb.createLayer(map, {
-      user_name: 'jsanz',
+      user_name: '{{site.cartodb.account}}',
       type: 'cartodb',
       sublayers: [{
         sql: "{{site.cartodb.sql}}",

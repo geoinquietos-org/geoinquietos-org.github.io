@@ -81,7 +81,7 @@ permalink: /
     L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(map);
 
     cartodb.createLayer(map, {
-      user_name: 'jsanz',
+      user_name: '{{site.cartodb.account}}',
       type: 'cartodb',
       sublayers: [{
         sql: "{{site.cartodb.sql}}",
@@ -95,7 +95,7 @@ permalink: /
 
       // show infowindows on click
       cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0),
-        ['cartodb_id','_group','id','main_website'],{})
+        ['cartodb_id','ggroup','id','main_website'],{})
       .model.set({
         //'sanitizeTemplate':false,
         'template' :  function(object){
