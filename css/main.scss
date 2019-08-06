@@ -50,3 +50,14 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+
+.fixme {
+	float: right;
+
+	p {
+		color: #496a97;
+	    font-style: italic;
+	    font-size: 0.9em;
+	}
+}
