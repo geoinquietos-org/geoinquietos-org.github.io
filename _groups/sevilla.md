@@ -11,5 +11,6 @@ websites:
   main        : http://sevilla.geoinquietos.org
   twitter     : geoinquietossvq
   github      : GeoinquietosSevilla
+  telegram    : https://t.me/geoinquietassvq
   meetup      : Geoinquietos-Sevilla/
 ---
