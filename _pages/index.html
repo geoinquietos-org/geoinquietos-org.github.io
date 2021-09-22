@@ -78,17 +78,16 @@ permalink: /
 
 
 
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(map);
 
     cartodb.createLayer(map, {
-      https: true,
       user_name: '{{site.cartodb.account}}',
       type: 'cartodb',
       sublayers: [{
         sql: "{{site.cartodb.sql}}",
         cartocss: $('#cartoCSS').html()
       }]
-    })
+    },{https:true})
     .addTo(map)
     .done(function(layer){
       map.attributionControl._attributions = {};
