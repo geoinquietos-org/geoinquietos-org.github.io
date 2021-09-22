@@ -81,6 +81,7 @@ permalink: /
     L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(map);
 
     cartodb.createLayer(map, {
+      https: true,
       user_name: '{{site.cartodb.account}}',
       type: 'cartodb',
       sublayers: [{
