@@ -6,12 +6,10 @@ longitude    : -0.4
 latitude     : 39.5
 
 websites:
-  main       : http://valencia.geoinquietos.org
-  twitter    : geoinquietosvlc
-  github     : geoinquietosvlc
-  meetup     : Geoinquietos-Valencia
-  facebook   : https://www.facebook.com/geoinquietosVLC
   telegram   : https://telegram.me/geoinquietosvlc
+  matrix     : https://matrix.to/#/#geoinquietos-vlc:osgeo.org
+  meetup     : Geoinquietos-Valencia
+  github     : geoinquietosvlc
 
 e-mail       : geoinquietosvlc@gmail.com
 ---
