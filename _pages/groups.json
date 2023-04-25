@@ -12,6 +12,7 @@ permalink: /groups.json
       "properties": {
         "id"    : "{{ group.group_id }}",
         "ggroup" : "{{ group.title }}",
+        "ggroup_short" : "{{ group.title | replace: 'Geoinquietos ', ''}}",
         "mailing-list" : "{{ group.mailing-list }}",
         "main-website" : "{{ group.websites.main }}",
         "other-websites" : {{ group.websites | jsonify }},

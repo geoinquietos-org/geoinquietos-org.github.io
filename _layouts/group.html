@@ -69,7 +69,7 @@ layout: default
 
 </div>
 {% include avatar_js.html %}
-{% include cartodb_js.html %}
+{% include maplibre.html %}
 <script type="text/javascript">
   $(document).ready(function(){
 
@@ -77,28 +77,21 @@ layout: default
       $('#content-title').show();
     }
 
-
-    var map = L.map('map', {
-      zoomControl: false,
-      center: [{{page.latitude}}, {{page.longitude}}],
-      zoom: {{site.cartodb.group_zoom}}
+    var map = new maplibregl.Map({
+        container: 'map',
+        style: "{{site.maplibre.style}}", // stylesheet location
+        center: [{{ page.longitude }}, {{ page.latitude }}], // starting position [lng, lat]
+        zoom: {{ site.maplibre.group_zoom }}// starting zoom
     });
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(map);
+    map.on('load',function(){
+    // Add groups source
+      map.addSource('groups', GROUPS_SOURCE);
+      // Add a groups layer
+      map.addLayer(GROUPS_POINT_LAYER);
+      // Add a groups layer
+      map.addLayer(GROUPS_LABEL_LAYER);
+    })
 
-    cartodb.createLayer(map, {
-      user_name: '{{site.cartodb.account}}',
-      type: 'cartodb',
-      sublayers: [{
-        sql: "{{site.cartodb.sql}}",
-        cartocss: $('#cartoCSS').html()
-      }]
-    },{https:true})
-    .addTo(map)
-    .done(function(){
-      map.attributionControl._attributions = {};
-      map.attributionControl.addAttribution('<a href="http://www.openstreetmap.org/copyright">OSM</a> | <a href="http://geoinquietos.org">Geoinquietos</a>');
-
-    });
   });
 </script>

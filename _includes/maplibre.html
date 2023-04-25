@@ -1,0 +1,61 @@
+<script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+<link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+
+<script>  
+    const GROUPS_SOURCE = {
+        type: 'geojson',
+        data: '/groups.json'
+    };
+    const GROUPS_POINT_LAYER = {
+        "id": "groups_points",
+        "type": "circle",
+        "source": "groups",
+        "paint": {
+            "circle-color": "rgba(255, 255, 255, 1)",
+            "circle-radius": 4,
+            "circle-stroke-color": "rgba(255, 255, 255, 1)",
+            "circle-stroke-opacity": 0.5,
+            "circle-blur": 0.8
+        }
+    };
+    const GROUPS_LABEL_LAYER = {
+        "id": "groups_labels",
+        "type": "symbol",
+        "source": "groups",
+        "layout": {
+            "text-field": "{ggroup_short}",
+            "text-font": [
+                "Open Sans Regular",
+                "Arial Unicode MS Regular"
+            ],
+            "visibility": "visible",
+            "text-justify": "auto",
+            "text-variable-anchor": [
+                "bottom-left",
+                "top-left",
+                "top-right",
+                "bottom-right"
+            ],
+            "symbol-placement": "point",
+            "text-offset": [0.3, 0.3],
+            "text-allow-overlap": false,
+            "text-size": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                4,
+                10,
+                6,
+                20
+            ]
+        },
+        "paint": {
+            "text-color": "rgba(255, 255, 255, 1)",
+            "text-halo-color": "rgba(255, 255, 255, 1)",
+            "text-halo-width": 0.5,
+            "text-halo-blur": 0.1,
+            "text-translate": [1, 1]
+        },
+        "minzoom": 3
+    };
+</script>

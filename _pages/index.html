@@ -66,44 +66,23 @@ permalink: /
 
 </div>
 
+{% include maplibre.html %}
 
-{% include cartodb_js.html %}
-<script type="text/javascript">
-  $(document).ready(function(){
-    var map = L.map('map', {
-      zoomControl: false,
-      center: [{{site.cartodb.center.lat}}, {{site.cartodb.center.lon}}],
-      zoom: {{site.cartodb.zoom}}
-    });
+<script>
+  var map = new maplibregl.Map({
+    container: 'map',
+    interactive: false,
+    style: "{{site.maplibre.style}}", // stylesheet location
+    center: [{{ site.maplibre.center.lon }}, {{ site.maplibre.center.lat }}], // starting position [lng, lat]
+    zoom: {{ site.maplibre.zoom }}// starting zoom
+  });
 
-
-
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(map);
-
-    cartodb.createLayer(map, {
-      user_name: '{{site.cartodb.account}}',
-      type: 'cartodb',
-      sublayers: [{
-        sql: "{{site.cartodb.sql}}",
-        cartocss: $('#cartoCSS').html()
-      }]
-    },{https:true})
-    .addTo(map)
-    .done(function(layer){
-      map.attributionControl._attributions = {};
-      map.attributionControl.addAttribution('<a href="http://www.openstreetmap.org/copyright">OSM</a> | <a href="http://geoinquietos.org">Geoinquietos</a>');
-
-      // show infowindows on click
-      cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0),
-        ['cartodb_id','ggroup','id','main_website'],{})
-      .model.set({
-        //'sanitizeTemplate':false,
-        'template' :  function(object){
-            if (object && object.cartodb_id){
-                return Mustache.render($('#infowindow_template').html(),object)
-            }
-        }
-      });
-    });
+  map.on('load',function(){
+  // Add groups source
+    map.addSource('groups', GROUPS_SOURCE);
+    // Add a groups layer
+    map.addLayer(GROUPS_POINT_LAYER);
+    // Add a groups layer
+    map.addLayer(GROUPS_LABEL_LAYER);
   })
-</script>
+  </script>

@@ -44,16 +44,14 @@ defaults:
     values:
       layout: contact
 
-cartodb:
+maplibre:
   center:
     lat: 5
     lon: -44
-  zoom: 2
-  group_zoom: 7
-  account: xurxosanz
-  sql: "SELECT *, regexp_replace(ggroup,'.*Geoinquietos ','') as label FROM groups"
-
-
+  zoom: 1
+  group_zoom: 6.5
+  style: "https://api.maptiler.com/maps/00b742ea-0798-4271-a8c3-2589e6ad0e50/style.json?key=LqOKqjXlNHCUvaHo6msW"
+  
 exclude:
   - ".git"
   - ".rvmrc"
