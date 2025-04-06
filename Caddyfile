@@ -1,0 +1,36 @@
+# A basic Caddyfile that exposes a static web server
+{
+    # Global options
+    email contact@geoinquietos.org  # For Let's Encrypt registration
+    auto_https off  # Disable automatic HTTPS
+}
+
+:80 {
+    # Serve static files
+    root * /usr/share/caddy
+
+    # File server configuration
+    file_server {
+        index index.html
+        browse
+    }
+
+    # Enable compression
+    encode gzip
+
+    # Security headers
+    header {
+        X-Content-Type-Options "nosniff"
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+        X-XSS-Protection "1; mode=block"
+        X-Frame-Options "SAMEORIGIN"
+        -Server
+    }
+
+
+    log {
+        output file /var/log/caddy/error.log
+        format console
+        level ERROR
+    }
+}
