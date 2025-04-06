@@ -1,0 +1,17 @@
+# Ignore the generated site directory
+_site
+
+# Ignore cache files
+.sass-cache
+.jekyll-cache
+
+# Ignore configuration and log files
+.jekyll-metadata
+Gemfile.lock
+
+# Ignore temporary or system files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode
+Justfile
