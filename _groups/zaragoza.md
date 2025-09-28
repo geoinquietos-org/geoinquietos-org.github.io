@@ -1,14 +1,17 @@
 ---
 group_id     : "zaragoza"
-title        : "Mapeado Colaborativo"
-mailing-list : "https://groups.google.com/forum/#%21forum/mapeado-colaborativohttp://mapcolabora.org/"
+title        : "Mapeado Colaborativo / Geoinquietos Zaragoza"
+mailing-list : "https://lists.osgeo.org/mailman/listinfo/mapcolabora"
 longitude    : "-0.887553"
 latitude     : "41.646481"
-email        : "mapeadocolaborativo@gmail.com"
+email        : "info@mapcolabora.org"
 
 websites:
   main     : "https://mapcolabora.org"
+  mastodon: "https://mapstodon.space/@mapcolabora"
+  instagram: "https://instagram.com/mapeadocolaborativo"
   twitter  : "MapColabora"
   meetup   : "mapcolabora"
   github   : "mapcolabora"
+  gillab   : "mapcolabora"
 ---
